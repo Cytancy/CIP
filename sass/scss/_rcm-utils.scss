@@ -1,0 +1,80 @@
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+// Mixins!
+
+@mixin rcm-absolute-center {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@mixin rcm-fill {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+@mixin rcm-auto-fill {
+	left: 0;
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+@mixin rcm-text-shadow-smoothing($strokeWidth, $outlineColor, $shadowSize: 0px, $shadowOpacity: 0) {
+	text-shadow: -$strokeWidth -$strokeWidth 0 $outlineColor, $strokeWidth -$strokeWidth 0 $outlineColor, -$strokeWidth $strokeWidth 0 $outlineColor, $strokeWidth $strokeWidth 0 $outlineColor, 0 0 $shadowSize rgba(51,51,51, $shadowOpacity);
+}
+
+@mixin rcm-size-icon-to($size) {
+	@include rcm-absolute-center();
+
+	font-size: $size;
+	height: $size;
+	line-height: $size;
+	text-align: center;
+	width: $size;
+}
+
+@mixin rcm-flex-center {
+	@include align-items(center);
+	@include justify-content(center);
+	@include display-flex;
+}
+
+@mixin test-every-font {
+	font-family: 'azo-sans-web', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
+	font-family: 'futura-pt', sans-serif;
+}
+
+@mixin rcm-font-smoothing {
+	@include translate3d(0, 0, 0);
+}
+
+
+@mixin grab-cursor {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: -o-grab;
+	cursor: -ms-grab;
+	cursor: grab;
+}
+
+@function strip-units($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@mixin grabbing-cursor {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+	cursor: -o-grabbing;
+	cursor: -ms-grabbing;
+	cursor: grabbing;
+}

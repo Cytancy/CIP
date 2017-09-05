@@ -1,0 +1,741 @@
+@import "compass/css3";
+@import "compass/css3/user-interface";
+@import "rcm-utils";
+
+$cruxRed: #ED1C24;
+$maxResponseWidth: 1920px;
+
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	height: 100%;
+	line-height: 1.42857143;
+	padding: 0;
+	width: 100%;
+
+	*, *:after, *:before {
+		@include box-sizing(border-box);
+	}
+}
+.cip-image-preview {
+	@include rcm-fill;
+
+	background-color: grey;
+
+	img {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: -9999px;
+		right: -9999px;
+		margin: auto;
+	}
+}
+
+.cip-main {
+	@include display-flex;
+	@include flex-direction(column);
+	@include rcm-fill;
+}
+
+.cip-row {
+	@include display-flex;
+	@include flex(0 0 auto);
+	@include justify-content(center);
+
+	position: relative;
+	width: 100%;
+
+	&-content {
+		max-width: 1920px;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.cip-hidden {
+	visibility: hidden;
+}
+
+@mixin cip-vw($map) {
+	$maxedMap: null;
+
+	@each $property, $values in $map {
+		$vwValue: null;
+
+		@each $value in $values {
+			$vwValue: append($vwValue, ($value * 1vw));
+		}
+
+		#{$property}: $vwValue;
+	}
+
+	@media screen and (min-width: $maxResponseWidth) {
+		@each $property, $values in $map {
+			$maxedValue: null;
+
+			@each $value in $values {
+				$maxedValue: append($maxedValue, ($value * .01 * $maxResponseWidth));
+			}
+
+			#{$property}: $maxedValue;
+		}
+	}
+}
+
+.cip-prefold {
+	background-color: #FFF;
+	z-index: 5;
+
+	.cip-row-content {
+		padding: 48px;
+	}
+
+	&-nav {
+		@include display-flex;
+
+		height: 24px;
+		position: relative;
+		width: 100%;
+
+		&-logo {
+			@include flex(0 0 auto);
+			@include display-flex;
+
+			height: 100%;
+			position: relative;
+
+			&-cru {
+				@include flex(0 0 auto);
+
+				position: relative;
+				height: 100%;
+			}
+
+			&-x {
+				@include flex(0 0 auto);
+
+				height: 24px;
+				margin-left: 5.5px;
+				margin-top: -.5px;
+				position: relative;
+				width: 24px;
+
+
+				&-1, &-2 {
+					bottom: -20px;
+					height: 28.14px;
+					left: -20px;
+					margin: auto;
+					overflow: hidden;
+					position: absolute;
+					right: -20px;
+					top: -20px;
+					width: 5.76px;
+
+					&-fill, &-cover {
+						@include rcm-fill;
+					}
+
+					&-fill {
+						background-color: $cruxRed;
+						z-index: 5;
+					}
+
+					&-cover {
+						background-color: #000;
+						z-index: 6;
+					}
+				}
+
+				&-1 {
+					@include transform(rotate(-45deg));
+				}
+
+				&-2 {
+					@include transform(rotate(45deg));
+				}
+			}
+		}
+
+		&-items {
+			@include flex(1 1 auto);
+
+			position: relative;
+		}
+
+		&-signin-button {
+			@include box-shadow(0 0 0 1px #000);
+			@include flex(0 0 auto);
+
+			height: 28px;
+			position: relative;
+
+			&-text {
+				@include align-items(center);
+				@include display-flex;
+
+				font-family: 'proxima-nova', sans-serif;
+				font-size: 12px;
+				font-weight: 500;
+				height: 100%;
+				letter-spacing: 1px;
+				padding: 0 16px;
+				z-index: 5;
+			}
+
+			&-bg {
+				@include rcm-fill;
+
+				background-color: $cruxRed;
+				opacity: 0;
+				z-index: 1;
+			}
+		}
+	}
+
+	&-content {
+		@include align-items(center);
+		@include cip-vw((padding: (0, 1.5)));
+		@include display-flex;
+		@include flex(1 1 auto);
+		@include justify-content(center);
+
+		height: 100%;
+		position: relative;
+
+		&-wrapper {
+			@include display-flex;
+			@include align-items(center);
+			@include cip-vw((
+				height: 30,
+				margin-bottom: 1.5,
+				margin-top: 3,
+			));
+
+			position: relative;
+			width: 100%;
+		}
+	}
+
+	&-left-line, &-right-line {
+		@include flex(0 0 auto);
+
+		background-color: rgba(#000, .2);
+		margin: 0 calc(24px + 1.5%);
+		position: relative;
+		width: 1px;
+	}
+
+	&-left-line {
+		height: 100%;
+	}
+
+	&-right-line {
+		@include cip-vw((
+			top: 14
+		));
+
+		align-self: flex-start;
+		height: calc(49.5vw + 132px);
+
+		@media screen and (min-width: $maxResponseWidth) {
+			height: 1082px;
+		}
+	}
+
+	&-header {
+		@include flex(0 0 auto);
+
+		position: relative;
+		width: 50%;
+	
+		&-main {
+			@include cip-vw((
+				font-size: 6.75, //108px;
+				margin-bottom: 1.5, //24px;
+			));
+			@include display-flex;
+			@include flex-direction(column);
+
+			color: #000;
+			font-family: 'europa', sans-serif;
+
+			&-a, &-b, &-c {
+				display: inline-block;
+				overflow: hidden;
+				position: relative;
+			}
+
+			&-text {
+				z-index: 5;
+			}
+
+			&-cover {
+				background-color: #000;
+				bottom: 0;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 6;
+			}
+
+			&-a {
+				@include cip-vw((width: 14.25));
+			}
+
+			&-a, &-c {
+				@include cip-vw((line-height: 6.75));
+			}
+
+			&-b {
+				@include cip-vw((
+					line-height: 8.75,
+					margin: -1 0,
+					width: 19.5
+				));
+			}
+
+			&-c {
+				@include cip-vw((width: 15));
+			}
+
+		}
+
+		&-sub {
+			@include cip-vw((
+				font-size: 1.5, // 24px,
+				line-height: 1.875, //30px,
+				margin-bottom: .75, //12px,
+			));
+
+			font-family: 'proxima-nova', sans-serif;
+			position: relative;
+
+			&-message {
+				@include cip-vw((width: 25.5));
+				
+				overflow: hidden;
+				position: relative;
+
+				&-text {
+					color: #000;
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: #000;
+					z-index: 6;
+				}
+			}
+
+			&-link {
+				display: inline-block;	
+				color: $cruxRed;
+				overflow: hidden;
+				position: relative;
+
+				&-underline {
+					background-color: $cruxRed;
+					height: 2px;
+					position: relative;
+					width: 100%;
+				}
+
+				&-text {
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: $cruxRed;
+					z-index: 6;
+				}
+			}
+		}
+	}
+
+	&-graphic {
+		$shadowBuffer: 3.75; //60px;
+		$contentWidth: 28; //448px;
+		$contentHeight: 23.5; //400px;
+
+		@include align-items(center);
+		@include display-flex;
+		@include flex(0 0 auto);
+
+		position: relative;
+		width: 50%;
+
+		&-content {
+			@include cip-vw((
+				height: $contentHeight + $shadowBuffer,
+				width: $contentWidth + $shadowBuffer,
+				top: -.75,
+			));
+			@include flex(0 0 auto);
+
+			margin-left: 48px;
+			position: relative;
+
+			&-media, &-shadow {
+				@include cip-vw((
+					height: $contentHeight,
+					width: $contentWidth,
+				));
+
+				position: absolute;
+
+				&-cover {
+					@include rcm-fill;
+				}
+			}
+
+			&-media {
+				background-color: #FFF;
+				bottom: 0;
+				left: 0;
+				overflow: hidden;
+				z-index: 5;
+
+				&-video {
+					height: 100%;
+					left: -999px;
+					margin: auto;
+					opacity: .2;
+					position: absolute;
+					right: -999px;
+					top: 0;
+					z-index: 5;
+				}
+
+				&-cover {
+					background-color: #000;
+					z-index: 6;
+				}
+			}
+
+			&-shadow {
+				overflow: hidden;
+				right: 0;
+				top: 0;
+				z-index: 4;
+
+				&-fill {
+					@include rcm-fill;
+
+					background-color: $cruxRed;
+					z-index: 5;
+				}
+
+				&-cover {
+					background-color: desaturate(darken($cruxRed, 6%), 4%);
+					z-index: 6;
+				}
+			}
+		}
+	}
+}
+
+.cip-about {
+	$bgColor: hsl(0, 0%, 96%);
+
+	background-color: $bgColor;
+
+	.cip-row-content {
+		@include display-flex;
+
+		padding: 84px 48px;
+	}
+
+	&-graphic {
+		@include display-flex;
+		@include flex(0 0 auto);
+		@include justify-content(center);
+
+		position: relative;
+		width: 50%;
+	}
+
+	&-chart {
+		@include cip-vw((
+			height: 32,
+			width: 32
+		));
+		@include rcm-flex-center;
+
+		position: relative;
+
+		&-circle {
+			@include rcm-fill;
+			@include border-radius(50%);
+			// @include transform(rotate(-90deg));
+
+			overflow: hidden;
+			z-index: 4;
+		}
+
+		&-label {
+			&-a, &-b {
+				overflow: hidden;
+				position: absolute;
+				z-index: 6;
+
+				&-text {
+					color: #FFF;
+					font-family: 'futura-pt', sans-serif;
+					font-size: 14px;
+					font-weight: 600;
+					text-align: center;
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: #FFF;
+					z-index: 6;
+				}
+			}
+			
+			&-a {
+				@include cip-vw((
+					top: 7.25,
+					left: 4.125
+
+				));
+			}
+
+			&-b {
+				@include cip-vw((
+					top: 4.5,
+					right: 7.25
+				));
+			}
+		}
+
+		&-content {
+			@include align-items(center);
+			@include border-radius(50%);
+			@include display-flex;
+			@include flex-direction(column);
+
+			@include cip-vw((
+				height: 21.5,
+				padding: 0 3,
+				width: 21.5
+			));
+
+			background-color: $bgColor;
+			overflow: hidden;
+			position: relative;
+			z-index: 5;
+
+			&-title {
+				@include cip-vw((
+					font-size: 3,
+					margin-top: 3.75
+				));
+
+				font-family: 'europa', sans-serif;
+				font-weight: 700;
+				overflow: hidden;
+				position: relative;
+
+				&-text {
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: $cruxRed;
+					z-index: 6;
+				}
+			}
+
+			&-message {
+				@include cip-vw((
+					font-size: 1,
+					margin-top: .375
+				));
+
+				font-family: 'proxima-nova', sans-serif;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+
+				b {
+					color: $cruxRed;
+					font-weight: 500;
+				}
+
+				&-text {
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: #000;
+					z-index: 6;
+				}
+			}
+
+			&-source {
+				@include cip-vw((
+					margin-bottom: 3
+				));
+
+				color: hsl(0, 0%, 45%);
+				font-family: 'proxima-nova', sans-serif;
+				font-size: 14px;
+				font-weight: 500;
+				letter-spacing: 1.25px;
+				margin-top: auto;
+				overflow: hidden;
+				position: relative;
+
+				&-text {
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: #000;
+					z-index: 6;
+				}
+			}
+		}
+	}
+
+	&-message {
+		@include flex(0 0 auto);
+
+		padding: 0 48px;
+		position: relative;
+		width: 50%;
+
+		&-header {
+			color: hsl(0, 0%, 55%);
+			font-family: 'proxima-nova', sans-serif;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 1.25px;
+			display: inline-block;
+
+			&-divider {
+				background-color: $cruxRed;
+				height: 2px;
+				position: relative;
+				width: 100%;
+				margin-bottom: 6px;
+			}
+		}
+
+		&-title {
+			@include cip-vw((margin-bottom: 1.5));
+
+			position: relative;
+
+			&-text {
+				@include cip-vw((
+					font-size: 5.25,
+					line-height: 5.25
+				));
+
+				color: #000;
+				font-family: 'europa', sans-serif;
+			}
+
+			&-bear {
+				@include cip-vw((
+					height: 3.75,
+					margin-left: -.5,
+					width: 3
+				));
+
+				display: inline-block;
+				position: relative;
+				overflow: hidden;
+
+				&-graphic {
+					bottom: 0;
+					height: 100%;
+					left: -100px;
+					margin: auto;
+					position: absolute;
+					right: -100px;
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					background-color: #000;
+					z-index: 6;
+				}
+			}
+		}
+
+		&-content {
+			@include cip-vw((
+				font-size: 1.375,
+				width: 36.25
+			));
+	
+			color: #000;
+			font-family: 'proxima-nova', sans-serif;
+
+			i {
+				font-weight: 500;
+				font-style: italic;
+				color: $cruxRed;
+			}
+		}
+
+		&-minor {
+			@include cip-vw((margin-top: 1.5));
+
+			color: hsl(0, 0%, 60%);
+			font-family: 'proxima-nova', sans-serif;
+			font-size: 14px;
+		}
+	}
+}
+
+.cip-team {
+	background-color: #000;
+	height: 150%;
+
+	.cip-row-content {
+		@include rcm-flex-center;
+		@include flex-direction(column);
+
+		height: 100%;
+		padding: 48px;
+	}
+
+	&-temp-title {
+		font-family: 'europa', sans-serif;
+		color: #FFF;
+		font-size: 72px;
+	}
+
+	&-temp-subtitle {
+		font-family: 'proxima-nova', sans-serif;
+		color: #FFF;
+		font-size: 24px;
+		text-align: center;
+		max-width: 50%;
+	}
+}
