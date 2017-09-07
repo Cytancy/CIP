@@ -468,7 +468,6 @@ $(document).ready(function() {
 						// reverse: (index % 2 == 1),
 						delay: .1 + .12 * index
 					});
-
 				});
 
 				// component.logo.element.removeClass("cip-hidden");
@@ -510,7 +509,7 @@ $(document).ready(function() {
 					contentElement: component.messageB.visual.element,
 					coverElement: component.messageB.cover.element,
 					direction: "y",
-					duration: 1.2,
+					duration: 1,
 					offset: 20,
 					delay: 0,
 				});
@@ -519,7 +518,7 @@ $(document).ready(function() {
 					contentElement: component.messageC.visual.element,
 					coverElement: component.messageC.cover.element,
 					direction: "y",
-					duration: 1.2,
+					duration: 1,
 					offset: 20,
 					delay: .32,
 				});
@@ -527,7 +526,7 @@ $(document).ready(function() {
 				component.timelines.push({
 					timeline: entryTimeline,
 					trigger: {
-						start: function() {return 8 * screen.vw;},
+						start: function() {return 20 * screen.vw;},
 						end: function() {return 10 * screen.vw;},
 					}
 				});
@@ -613,53 +612,92 @@ $(document).ready(function() {
 
 		components.sections.quote = {
 			initialize: function(component, element) {
-				var headerTimeline = new TimelineMax({paused: true}),
-					galleryTimeline = new TimelineMax({paused: true});
+				var entryTimeline = new TimelineMax({paused: true});
 
 				_.assign(component, {
+					box: {
+						content: {element: element.find(".cip-quote-box-content")},
+						text: {element: element.find(".cip-quote-box-text")},
+						cover: {element: element.find(".cip-quote-box-cover")},
+						quoteLeft: {
+							content: {element: element.find(".cip-quote-box-quote-left-graphic")},
+							cover: {element: element.find(".cip-quote-box-quote-left-cover")}
+						},
+						quoteRight: {
+							content: {element: element.find(".cip-quote-box-quote-right-graphic")},
+							cover: {element: element.find(".cip-quote-box-quote-right-cover")}
+						}
+					}
 				});
 
-				// component.timelines.push({
-				// 	timeline: headerTimeline,
-				// 	trigger: {
-				// 		start: function() {return 10.75 * screen.vw;},
-				// 		end: function() {return 14 * screen.vw;},
-				// 	}
-				// });
 
-				// component.timelines.push({
-				// 	timeline: galleryTimeline,
-				// 	trigger: {
-				// 		start: function() {return 15 * screen.vw;},
-				// 		end: function() {return 4.5 * screen.vw;},
-				// 	}
-				// });
+				cipAndSlide(entryTimeline, {
+					contentElement: component.box.content.element,
+					coverElement: component.box.cover.element,
+					direction: "y",
+					duration: .8,
+					offset: 36,
+					offsetElement: component.box.text.element,
+					delay: 0,
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.box.quoteLeft.content.element,
+					coverElement: component.box.quoteLeft.cover.element,
+					direction: "x",
+					duration: .8,
+					delay: .4,
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.box.quoteRight.content.element,
+					coverElement: component.box.quoteRight.cover.element,
+					direction: "x",
+					duration: .8,
+					delay: .4,
+				});
+
+				component.timelines.push({
+					timeline: entryTimeline,
+					trigger: {
+						start: function() {return 16.5 * screen.vw;},
+						end: function() {return 2.5 * screen.vw;},
+					}
+				});
 			},
 		};
 
 		components.sections.features = {
 			initialize: function(component, element) {
-				var headerTimeline = new TimelineMax({paused: true}),
-					galleryTimeline = new TimelineMax({paused: true});
+				var entryTimeline = new TimelineMax({paused: true});
 
 				_.assign(component, {
+					items: {
+						header: {element: element.find(".cip-features-item-header")}
+					}
 				});
 
-				// component.timelines.push({
-				// 	timeline: headerTimeline,
-				// 	trigger: {
-				// 		start: function() {return 10.75 * screen.vw;},
-				// 		end: function() {return 14 * screen.vw;},
-				// 	}
-				// });
+				component.items.header.element.each(function(index) {
+					var element = $(this),
+						contentElement = element.find(".cip-features-item-header-content"),
+						coverElement = element.find(".cip-features-item-header-cover");
 
-				// component.timelines.push({
-				// 	timeline: galleryTimeline,
-				// 	trigger: {
-				// 		start: function() {return 15 * screen.vw;},
-				// 		end: function() {return 4.5 * screen.vw;},
-				// 	}
-				// });
+					cipAndSlide(entryTimeline, {
+						contentElement: contentElement,
+						coverElement: coverElement,
+						duration: .8,
+						direction: "y",
+						delay: 0 + .14 * index
+					});
+				});
+
+				component.timelines.push({
+					timeline: entryTimeline,
+					trigger: {
+						start: function() {return 6 * screen.vw;},
+						end: function() {return 3* screen.vw;},
+					}
+				});
 			},
 		};
 
@@ -763,7 +801,7 @@ $(document).ready(function() {
 				component.timelines.push({
 					timeline: entryTimeline,
 					trigger: {
-						start: function() {return 6 * screen.vw;},
+						start: function() {return 10 * screen.vw;},
 						end: function() {return 6 * screen.vw;},
 					}
 				});
@@ -781,24 +819,21 @@ $(document).ready(function() {
 		components.sections.footer = {
 			initialize: function(component, element) {
 				var entryTimeline = new TimelineMax({paused: true});
-
+			
 				_.assign(component, {
-					messageB: {
-						content: {element: element.find(".cip-consumer-message-b-content")},
-						cover: {element: element.find(".cip-consumer-message-b-cover")}
-					},
-					messageC: {
-						content: {element: element.find(".cip-consumer-message-c-content")},
-						cover: {element: element.find(".cip-consumer-message-c-cover")}
+					whitepaper: {
+						content: {element: component.element.find(".cip-footer-whitepaper-content")},
+						cover: {element: component.element.find(".cip-footer-whitepaper-cover")},
 					}
 				});
 
 				cipAndSlide(entryTimeline, {
-					contentElement: component.messageB.content.element,
-					coverElement: component.messageB.cover.element,
+					contentElement: component.whitepaper.content.element,
+					coverElement: component.whitepaper.cover.element,
 					direction: "y",
 					duration: 1.2,
-					offset: -20,
+					offset: 20,
+					reverse: true,
 					delay: 0,
 					hideCover: true,
 				});
@@ -806,32 +841,10 @@ $(document).ready(function() {
 				component.timelines.push({
 					timeline: entryTimeline,
 					trigger: {
-						start: function() {return 10 * screen.vw;},
-						end: function() {return 10 * screen.vw;},
+						start: function() {return 3 * screen.vw;},
+						end: function() {return 0 * screen.vw;},
 					}
 				});
-
-				var headerTimeline = new TimelineMax({paused: true}),
-					galleryTimeline = new TimelineMax({paused: true});
-
-				_.assign(component, {
-				});
-
-				// component.timelines.push({
-				// 	timeline: headerTimeline,
-				// 	trigger: {
-				// 		start: function() {return 10.75 * screen.vw;},
-				// 		end: function() {return 14 * screen.vw;},
-				// 	}
-				// });
-
-				// component.timelines.push({
-				// 	timeline: galleryTimeline,
-				// 	trigger: {
-				// 		start: function() {return 15 * screen.vw;},
-				// 		end: function() {return 4.5 * screen.vw;},
-				// 	}
-				// });
 			},
 		};
 
@@ -1007,13 +1020,13 @@ $(document).ready(function() {
 
 		if (parameters.offset) {
 			if (parameters.direction == "x") {
-				timeline.from(parameters.contentElement, parameters.duration, {
+				timeline.from(parameters.offsetElement || parameters.contentElement, parameters.duration, {
 					x: parameters.offset,
 					ease: CustomEase.get("cipInOut")
 				}, parameters.delay);
 			}
 			else if (parameters.direction == "y") {
-				timeline.from(parameters.contentElement, parameters.duration, {
+				timeline.from(parameters.offsetElement || parameters.contentElement, parameters.duration, {
 					y: parameters.offset,
 					ease: CustomEase.get("cipInOut")
 				}, parameters.delay);

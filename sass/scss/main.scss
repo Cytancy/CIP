@@ -931,13 +931,12 @@ body {
 		));
 		@include flex(0 0 auto);
 
-
 		position: relative;
 
 		&-text {
 			@include cip-vw((
 				font-size: 1.5,
-				width: 55.5,
+				width: 53,
 				padding: .75 1.5
 			));
 
@@ -1279,7 +1278,6 @@ body {
 		text-align: center;
 	}
 
-
 	&-message-a {
 		@include cip-vw((
 			margin: 1.5 0
@@ -1289,12 +1287,27 @@ body {
 	&-box {
 		@include cip-vw((
 			margin: 1.5 0,
-			padding: 2.25 3.75,
 			width: 50
 		));
 		@include flex(0 0 auto);
 
 		position: relative;
+
+		&-display {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+
+		&-content {
+			@include cip-vw((
+				padding: 2.25 3.75,
+			));
+
+			position: relative;
+			width: 100%;
+			z-index: 5;
+		}
 
 		&-border {
 			@include box-shadow(inset 0 0 0 8px rgba(#000, .1));
@@ -1314,12 +1327,34 @@ body {
 			z-index: 5;
 		}
 
+		&-cover {
+			@include rcm-fill;
+
+			background-color: #E5E5E5;
+			z-index: 6;
+		}
+
 		&-quote-left, &-quote-right {
 			@include cip-vw((
 				height: 3
 			));
 
+			overflow: hidden;
 			position: absolute;
+			z-index: 7;
+
+			&-graphic {
+				height: 100%;
+				position: relative;
+				z-index: 5;
+			}
+
+			&-cover {
+				@include rcm-fill;
+
+				background-color: $cruxRed;
+				z-index: 6;
+			}
 		}
 
 		&-quote-left {
@@ -1363,6 +1398,36 @@ body {
 		@include flex(0 0 auto);
 		@include flex-direction(column);
 
+		&-header {
+			@include flex(0 0 auto);
+			@include cip-vw((
+				margin-bottom: .75
+			));
+
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+
+			&-content {
+				@include align-items(center);
+				@include display-flex;
+				@include flex(0 0 auto);
+				@include flex-direction(column);
+
+				position: relative;
+				width: 100%;
+
+				z-index: 5;
+			}
+
+			&-cover {
+				@include rcm-fill;
+
+				background-color: $cruxRed;
+				z-index: 6;
+			}
+		}
+
 		&-graphic {
 			@include cip-vw((
 				height: 13.5,
@@ -1384,12 +1449,10 @@ body {
 			font-family: 'europa', sans-serif;
 			font-weight: 700;
 			position: relative;
+			white-space: nowrap;
 		}
 
 		&-underline {
-			@include cip-vw((
-				margin-bottom: .75
-			));
 			@include flex(0 0 auto);
 
 			background-color: $cruxRed;
@@ -1588,9 +1651,18 @@ body {
 			width: 36
 		));
 		@include flex(0 0 auto);
-		@include rcm-flex-center;
 
+		overflow: hidden;
 		position: relative;
+
+		&-content {
+			@include rcm-flex-center;
+
+			height: 100%;
+			position: relative;
+			width: 100%;
+			z-index: 5;
+		}
 
 		&-box {
 			@include box-shadow(inset 0 0 0 8px #FFF);
@@ -1620,6 +1692,13 @@ body {
 			font-family: 'proxima-nova', sans-serif;
 			font-weight: 600;
 			position: relative;
+			z-index: 6;
+		}
+
+		&-cover {
+			@include rcm-fill;
+
+			background-color: #FFF;
 			z-index: 6;
 		}
 	}
@@ -1665,7 +1744,7 @@ body {
 		@include flex(0 0 auto);
 
 		color: #FFF;
-		font-family: 'proxima-nova';
+		font-family: 'proxima-nova', sans-serif;
 		font-size: 14px;
 		margin-right: auto;
 		position: relative;
