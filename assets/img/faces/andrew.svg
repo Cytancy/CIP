@@ -1,0 +1,689 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 168 168">
+  <defs>
+    <clipPath id="a">
+      <rect width="168" height="168" style="fill: none"/>
+    </clipPath>
+    <pattern id="b" data-name="New Pattern Swatch 37" width="16" height="16" patternTransform="translate(-7.867 -19.249)" patternUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <rect width="16" height="16" style="fill: none"/>
+      <rect width="16" height="16" style="fill: #e72e34"/>
+      <rect width="8" height="8" style="fill: #1c0000"/>
+      <g>
+        <rect x="8" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="6" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="6.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="6.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="7" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="7.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="7.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="8" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="4" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="4.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="4.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="5" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="5.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="5.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="10" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="6" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="6.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="6.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="7" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="7.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="7.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="10" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="4" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="4.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="4.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="5" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="5.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="5.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="8" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="2" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="2.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="2.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="3" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="3.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="3.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="0.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="0.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="1" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.667" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.333" y="1.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="8.333" y="1.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="9" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="9.667" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="10" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="2" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="2.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="2.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="3" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="3.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="3.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="0.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="0.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="1" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.667" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.333" y="1.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="10.333" y="1.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="11" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="11.667" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="12" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="6" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="6.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="6.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="7" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="7.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="7.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="12" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="4" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="4.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="4.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="5" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="5.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="5.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="14" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="6" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="6" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="6.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="6.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="6.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="6.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="7" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="7" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="7.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="7.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="7.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="7.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="14" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="4" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="4" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="4.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="4.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="4.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="4.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="5" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="5" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="5.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="5.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="5.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="5.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="12" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="2" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="2.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="2.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="3" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="3.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="3.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="0.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="0.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="1" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.667" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.333" y="1.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="12.333" y="1.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="13" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="13.667" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="14" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="2" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="2" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="2.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="2.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="2.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="2.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="3" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="3" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="3.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="3.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="3.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="3.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="0.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="0.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="0.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="0.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="1" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="1" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.667" y="1.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.333" y="1.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="14.333" y="1.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="15" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="15.667" y="1.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="14" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="14.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="14.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="15" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="15.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="15.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="12" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="12.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="12.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="13" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="13.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="13.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="2" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="14" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="14.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="14.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="15" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="15.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="15.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="2" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="12" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="12.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="12.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="13" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="13.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="13.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="10" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="10.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="10.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="11" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="11.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="11.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="8" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="8.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="8.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="9" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.667" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.333" y="9.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="0.333" y="9.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="1" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="1.667" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="2" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="10" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="10.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="10.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="11" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="11.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="11.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="2" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="8" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="8.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="8.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="9" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.667" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.333" y="9.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="2.333" y="9.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="3" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="3.667" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="4" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="14" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="14.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="14.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="15" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="15.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="15.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="4" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="12" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="12.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="12.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="13" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="13.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="13.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="6" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="14" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="14" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="14.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="14.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="14.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="14.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="15" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="15" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="15.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="15.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="15.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="15.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="6" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="12" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="12" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="12.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="12.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="12.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="12.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="13" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="13" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="13.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="13.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="13.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="13.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="4" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="10" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="10.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="10.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="11" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="11.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="11.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="4" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="8" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="8.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="8.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="9" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.667" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.333" y="9.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="4.333" y="9.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="5" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="5.667" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="6" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="10" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="10" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="10.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="10.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="10.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="10.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="11" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="11" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="11.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="11.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="11.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="11.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+      <g>
+        <rect x="6" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="8" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="8" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="8.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="8.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="8.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="8.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="9" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="9" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.667" y="9.333" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.333" y="9.333" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="6.333" y="9.667" width="0.334" height="0.333" style="fill: #1c0000"/>
+        <rect x="7" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+        <rect x="7.667" y="9.667" width="0.333" height="0.333" style="fill: #1c0000"/>
+      </g>
+    </pattern>
+    <linearGradient id="c" x1="81.776" y1="67.087" x2="81.776" y2="53.626" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5ba89"/>
+      <stop offset="1" stop-color="#d68756"/>
+    </linearGradient>
+    <linearGradient id="d" data-name="Áåçûìÿííûé ãðàäèåíò 52" x1="96.971" y1="12.803" x2="79.314" y2="4.636" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6945e"/>
+      <stop offset="0.882" stop-color="#f5ba89"/>
+    </linearGradient>
+  </defs>
+  <title>andrew</title>
+  <g style="clip-path: url(#a)">
+    <g>
+      <path d="M152,168c2.108.569-8.163-95.193-10.736-94.656,0,0-23.075-10.59-43.481-14.315-3.357-.613-9.5,9.39-12.4,15.252L84,78.625l-2.25-5.28L69.993,60.014c-3.487.9-7.022,2.021-10.479,3.251A221.634,221.634,0,0,0,29,77.126c-5.561,27.528-7.267,58.263-6.867,90.75l23.74.125,2.9-30.186L49.75,168h75.583L122.5,128.126,128,168l20.632-.125" style="fill: url(#b)"/>
+      <path d="M67.845,35.309l3.289,26.079s1.958,9.9,12.667,8.573S95.707,59.684,95.707,59.684L92.855,36.855Z" style="fill: url(#c)"/>
+      <path d="M52.138-6.436S45.113-8.2,42.819-7.5C39.81-5.905,37.277,7.049,50.867,8.987,54.853,1.924,52.138-6.436,52.138-6.436Z" style="fill: #ebae7d"/>
+      <path d="M48.944,5.432A9.812,9.812,0,0,1,46.563,3.55,4.916,4.916,0,0,1,45.185.642L45.19.2a3.666,3.666,0,0,1,.065-.419,4.05,4.05,0,0,1,.235-.823,3.548,3.548,0,0,1,.441-.779,3.114,3.114,0,0,1,.628-.648,4.126,4.126,0,0,1,1.584-.741,5.216,5.216,0,0,1,.837-.127,4.99,4.99,0,0,1,.869.016l-.468,1.169a28.293,28.293,0,0,0-2.4-1.589,11.379,11.379,0,0,0-1.255-.623,2.135,2.135,0,0,0-1.133-.193l.2-.195a10.011,10.011,0,0,0-.745,1.572,4.089,4.089,0,0,0-.206.846,2.262,2.262,0,0,0,.024.881,2.892,2.892,0,0,1-.27-1.826,6.758,6.758,0,0,1,.463-1.823l.049-.126L44.25-5.3a2.569,2.569,0,0,1,1.784-.036,8.063,8.063,0,0,1,1.48.558A16.87,16.87,0,0,1,50.16-3.2l1.847,1.325-2.315-.156a3.863,3.863,0,0,0-.618.007,5.586,5.586,0,0,0-.636.088,2.833,2.833,0,0,0-1.108.48,2.714,2.714,0,0,0-.422.4,2.345,2.345,0,0,0-.328.488,2.623,2.623,0,0,0-.214.592c-.024.1-.08.291-.076.312l-.039.3A4.594,4.594,0,0,0,47.1,3.14,13.459,13.459,0,0,0,48.944,5.432Z" style="fill: #c78051"/>
+      <path d="M106.82-4.168s5.448-1.258,8.6-.734c4.3,3.67,5.3,18.137-7.311,17.09A111.259,111.259,0,0,1,106.82-4.168Z" style="fill: #ebae7d"/>
+      <path d="M110.375,8.11a13.4,13.4,0,0,0,1.841-2.293,4.584,4.584,0,0,0,.849-2.508l-.037-.3c0-.02-.053-.212-.076-.31a2.665,2.665,0,0,0-.215-.593,2.341,2.341,0,0,0-.328-.489,2.716,2.716,0,0,0-.422-.4,2.844,2.844,0,0,0-1.108-.48,5.644,5.644,0,0,0-.635-.087,3.869,3.869,0,0,0-.618-.008L107.31.8l1.847-1.326A16.977,16.977,0,0,1,111.8-2.1a8.055,8.055,0,0,1,1.48-.56,2.575,2.575,0,0,1,1.783.036l.148.068.049.126A6.76,6.76,0,0,1,115.728-.6a2.906,2.906,0,0,1-.269,1.825,2.259,2.259,0,0,0,.024-.88,4.047,4.047,0,0,0-.206-.846,9.873,9.873,0,0,0-.745-1.571l.2.194a2.135,2.135,0,0,0-1.134.192,11.847,11.847,0,0,0-1.255.624,28.569,28.569,0,0,0-2.4,1.59l-.468-1.169a4.842,4.842,0,0,1,.869-.016,5.051,5.051,0,0,1,.837.126A4.125,4.125,0,0,1,112.758.2a3.115,3.115,0,0,1,.629.648,3.527,3.527,0,0,1,.442.779,4.091,4.091,0,0,1,.235.823,3.632,3.632,0,0,1,.065.419l.005.447a4.921,4.921,0,0,1-1.378,2.909A9.884,9.884,0,0,1,110.375,8.11Z" style="fill: #c78051"/>
+      <path d="M50.549-10.853C49.755-5.324,58.935,50.81,80.035,50.81c26.107,0,30.7-45.973,28.84-59.519S96.987-47.2,81.942-47.2C61.881-47.2,52.408-23.763,50.549-10.853Z" style="fill: #f5ba89"/>
+      <path d="M96.755,4.694s-.771,5.269-1.895,6.136-11.035,2.863-13.085,2.877-3.6-9.013-3.6-9.013l5.073-.428S83.331,7.842,96.755,4.694Z" style="fill: url(#d)"/>
+      <path d="M81.5,55.252c16.866,0,28.392-35.871,28.392-35.871s0-20.071-.787-26.374c-.082,1.4-1.682,20.719-28.769,20.719-28.11,0-28.967-23.741-28.967-23.741h-.932c-.6,4.365.061,29.4.061,29.4S64.313,55.252,81.5,55.252Z" style="fill: #382c22"/>
+      <path d="M89.873-25.124a38.106,38.106,0,0,0-4.362,3.962A18.715,18.715,0,0,0,82.2-16.469a8.236,8.236,0,0,0-.687,2.709,21.436,21.436,0,0,0-.046,2.84c.037.963.1,1.933.2,2.9s.217,1.934.364,2.9c.3,1.926.635,3.851,1.074,5.746.216.945.46,1.889.749,2.781a5.249,5.249,0,0,0,.379.971,2.2,2.2,0,0,0,.934.37,13.119,13.119,0,0,0,2.757.183c.956-.016,1.921-.093,2.889-.172,1.933-.172,3.884-.442,5.8-.772l1.005-.173-.148.963A24.914,24.914,0,0,1,96.4,9.371a6.606,6.606,0,0,1-.526,1.143,2.726,2.726,0,0,1-.439.574,1.389,1.389,0,0,1-.363.267l-.259.122a10.261,10.261,0,0,1-1.193.385l-1.129.281c-1.5.359-3.013.606-4.525.857s-3.023.482-4.545.661l4.429-1.2,4.392-1.252,1.075-.342c.371-.124.682-.244.97-.37l.251-.138a.477.477,0,0,0,.088-.08,1.649,1.649,0,0,0,.235-.349,5.579,5.579,0,0,0,.382-.956,23.865,23.865,0,0,0,.8-4.364l.856.79c-1.964.408-3.919.731-5.912.97-.994.12-2,.195-3.016.226a14.558,14.558,0,0,1-3.137-.189,3.66,3.66,0,0,1-1.758-.777,2.282,2.282,0,0,1-.577-.937c-.117-.266-.185-.508-.268-.756-.309-.988-.548-1.959-.763-2.94-.425-1.957-.776-3.921-1.008-5.906-.12-.99-.222-1.985-.287-2.984a29.89,29.89,0,0,1-.094-3.011,22.278,22.278,0,0,1,.235-3.067,9.329,9.329,0,0,1,.941-2.952,16.627,16.627,0,0,1,3.825-4.681A29.927,29.927,0,0,1,89.873-25.124Z" style="fill: #cc8b54"/>
+      <g>
+        <path d="M60.224,7.471a108.109,108.109,0,0,0-8.411,15.062c.2.46.427.964.672,1.5A103.2,103.2,0,0,1,61.162,8.222C60.836,7.979,60.53,7.725,60.224,7.471Z" style="fill: #24180e"/>
+        <path d="M76.59,13.559c-.4-.032-.815-.056-1.2-.1-2.145,8.879-8.19,21.722-12.04,29.4.269.359.536.717.811,1.068C68.043,36.246,74.393,22.869,76.59,13.559Z" style="fill: #24180e"/>
+        <path d="M102.967,6.038q-.413.412-.862.82a28.447,28.447,0,0,1,6.824,15.251c.38-1.029.653-1.817.806-2.27A28.808,28.808,0,0,0,102.967,6.038Z" style="fill: #24180e"/>
+        <path d="M92.61,12.034l-1.174.343C94.182,21.6,96,33.98,97.177,44.843l.935-1.286C96.933,33.059,95.138,20.884,92.61,12.034Z" style="fill: #24180e"/>
+      </g>
+      <path d="M58.691,12.6s22.34,15.05,36.17,6.555c0,0-6.278,10.751-18.966,7.529A24.923,24.923,0,0,1,59.13,12.966" style="fill: #fff"/>
+      <path d="M57.692,14.636s-.182-2.007.5-2.653a4.733,4.733,0,0,1,2.4-.714Z" style="fill: #1f1812"/>
+    </g>
+    <polygon points="69.333 55.376 80.167 64.542 74.75 75.376 62.64 62.119 69.333 55.376" style="fill: url(#b)"/>
+    <polygon points="85.383 65.376 91.5 74.042 100.933 59.388 96.5 55.376 85.383 65.376" style="fill: url(#b)"/>
+    <polygon points="81.75 73.344 80.167 64.542 76.5 71.876 81.75 73.344" style="fill: url(#b)"/>
+    <polygon points="85.383 65.376 85.383 74.282 89.903 71.78 85.383 65.376" style="fill: url(#b)"/>
+    <polygon points="81.75 73.344 80.167 64.542 76.5 71.876 81.75 73.344" style="fill: #020202;opacity: 0.4"/>
+    <polygon points="85.383 65.376 85.383 74.282 89.903 71.78 85.383 65.376" style="fill: #020202;opacity: 0.4"/>
+  </g>
+</svg>

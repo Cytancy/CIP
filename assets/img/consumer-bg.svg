@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1106.997">
+  <defs>
+    <linearGradient id="a" x1="-74.546" y1="383.504" x2="1674.546" y2="723.493" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#50aafa"/>
+      <stop offset="0.662" stop-color="#e0f7ff"/>
+    </linearGradient>
+  </defs>
+  <title>consumer-bg</title>
+  <rect width="1600" height="1106.997" style="fill: url(#a)"/>
+</svg>

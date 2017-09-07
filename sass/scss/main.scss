@@ -286,25 +286,23 @@ body {
 			}
 
 			&-a {
-				@include cip-vw((width: 14.25));
-			}
-
-			&-a, &-c {
-				@include cip-vw((line-height: 6.75));
+				@include cip-vw((width: 21.875));
 			}
 
 			&-b {
-				@include cip-vw((
-					line-height: 8.75,
-					margin: -1 0,
-					width: 19.5
-				));
+				@include cip-vw((width: 14.75));
 			}
 
 			&-c {
-				@include cip-vw((width: 15));
+				@include cip-vw((width: 29.375));
 			}
 
+			&-a, &-b, &-c {
+				@include cip-vw((
+					line-height: 8.75,
+					margin: -.95 0,
+				));
+			}
 		}
 
 		&-sub {
@@ -318,13 +316,14 @@ body {
 			position: relative;
 
 			&-message {
-				@include cip-vw((width: 25.5));
+				@include cip-vw((width: 17.25));
 				
 				overflow: hidden;
 				position: relative;
 
 				&-text {
 					color: #000;
+					white-space: nowrap;
 					z-index: 5;
 				}
 
@@ -714,28 +713,953 @@ body {
 }
 
 .cip-team {
-	background-color: #000;
-	height: 150%;
+	@include align-items(center);
+	@include flex-direction(column);
+
+	background-color: #FFF;
+	overflow-x: hidden;
+	overflow-y: visible;
 
 	.cip-row-content {
-		@include rcm-flex-center;
+		@include cip-vw((
+			padding-bottom: 4.5
+		));
+
 		@include flex-direction(column);
+		@include rcm-flex-center;
+	}
+
+	&-header {
+		@include cip-vw((
+			height: 7.5
+		));
+		@include flex(0 0 auto);
+
+		position: relative;
+		width: 100%;
+
+		&-half-bg {
+			background-color: hsl(0, 0%, 96%);
+			height: 50%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 4;
+		}
+
+		&-lines {
+			height: 100%;
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 6;
+			left: 0;
+
+			polyline {
+				fill: none;
+				stroke-width: 1px;
+				stroke: #B3B3B3;
+			}
+		}
+
+		&-title {
+			@include cip-vw((
+				font-size: 3,
+				letter-spacing: .75,
+			));
+
+			@include rcm-flex-center;
+
+			background-color: #FFF;
+			font-family: 'europa', sans-serif;
+			font-weight: 700;
+			height: 100%;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 37.5%;
+			z-index: 5;
+		}
+	}
+
+	&-message {
+		@include cip-vw((
+			font-size: 1.3125,
+			margin-top: .75,
+		));
+
+		font-family: 'proxima-nova', sans-serif;
+		text-align: center;
+
+		span {
+			position: relative;
+
+			&:after {
+				background-color: #000;
+				bottom: 0;
+				content: "";
+				height: 1px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+
+	&-portrait {
+		&-row {
+			@include align-items(center);
+			@include cip-vw((
+				height: 15.375,
+				margin-top: 3.75,
+			));
+			@include display-flex;
+			@include justify-content(center);
+
+			width: 200%;
+		}
+
+		&-item {
+			@include align-items(center);
+			@include cip-vw((
+				margin: 0 3,
+				width: 10.5
+			));
+			@include display-flex;
+			@include flex-direction(column);
+
+			height: 100%;
+			
+			&-faded &-visual-image {
+				opacity: .5;
+			}
+
+			&-visual {
+				@include cip-vw((
+					height: 10.5
+				));
+				@include flex(0 0 auto);
+
+				background-color: #F4F4F4;
+				overflow: hidden;
+				position: relative;
+				width: 100%;
+
+				&-image {
+					@include rcm-fill;
+
+					z-index: 5;
+				}
+
+				&-cover {
+					@include rcm-fill;
+
+					z-index: 6;
+				}
+			}
+
+			&-name {
+				@include cip-vw((
+					font-size: 1.3125,
+					letter-spacing: .03125,
+					margin-top: .75,
+				));
+				@include flex(0 0 auto);
+				@include display-flex;
+				@include justify-content(center);
+
+				font-family: 'proxima-nova', sans-serif;
+				white-space: nowrap;
+			}
+
+			&-descriptor {
+				@include cip-vw((
+					font-size: 0.875,
+				));
+				@include flex(0 0 auto);
+
+				color: #808080;
+				font-family: 'proxima-nova', sans-serif;
+				text-align: center;
+			}
+
+			&:nth-child(even) &-visual-cover {
+				background-color: $cruxRed;
+			}
+
+			&:nth-child(odd) &-visual-cover {
+				background-color: #000;
+			}
+		}
+	}
+}
+
+.cip-consumer {
+	@include background-image(linear-gradient(101deg, hsl(210, 95%, 72%) 0%,hsl(198, 94%, 94%) 62.18%));
+
+	overflow-x: hidden;
+	overflow-y: visible;
+
+	.cip-row-content {
+		@include cip-vw((
+			padding: 3.75 7.5,
+		));
+		@include display-flex;
+		@include flex-direction(column);
+	}
+
+	&-title {
+		@include align-self(flex-start);
+		@include cip-vw((
+			font-size: 5.25
+		));
+		@include flex(0 0 auto);
+
+		color: #FFF;
+		font-family: 'europa', sans-serif;
+		font-weight: 700;
+		position: relative;
+	}
+
+	&-message-a {
+		@include cip-vw((
+			margin-top: .75
+		));
+		@include flex(0 0 auto);
+
+
+		position: relative;
+
+		&-text {
+			@include cip-vw((
+				font-size: 1.5,
+				width: 55.5,
+				padding: .75 1.5
+			));
+
+			background-color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			color: #000;
+			position: relative;
+			z-index: 5;
+		}
+
+		&-numbers {
+			@include cip-vw((
+				font-size: 6.75,
+				left: 29.25,
+				top: -3.75
+			));
+
+			color: rgba(#000, .03);
+			font-family: 'futura-pt', sans-serif;
+			font-weight: 700;
+			position: absolute;
+			white-space: nowrap;
+			z-index: 7;
+		}
+	}
+
+	&-message-row {
+		@include cip-vw((
+			margin: 3.75 0,
+			padding: 0 1.5
+		));
+
+		@include display-flex;
+		@include flex(0 0 auto);
+		@include justify-content(space-around);
+
+		position: relative;
+		width: 100%;
+	}
+
+	&-message-b, &-message-c {
+		@include align-items(center);
+		@include display-flex;
+		@include flex-direction(column);
+		@include flex(0 0 auto);
 
 		height: 100%;
-		padding: 48px;
+		overflow: hidden;
+		position: relative;
+		z-index: 5;
+
+
+		&-bubble {
+			@include align-items(center);
+			@include cip-vw((
+				margin-bottom: 1.5
+			));
+			@include display-flex;
+			@include flex(0 0 auto);
+			@include flex-direction(column);
+
+			position: relative;
+			z-index: 7;
+
+			&-text {
+				@include cip-vw((
+					font-size: 1.5,
+					padding: .75 1.5,
+				));
+
+				background-color: #FFF;
+				color: #000;
+				font-family: 'proxima-nova', sans-serif;
+				position: relative;
+				text-align: center;
+			}
+
+			&-triangle {
+				@include cip-vw((
+					width: 1.75,
+				));
+
+				position: relative;
+			}
+		}
+
+		&-visual {
+			@include flex(0 0 auto);
+
+			margin-top: auto;
+			overflow: hidden;
+			position: relative;
+			z-index: 5;
+
+			&-graphic {
+				@include cip-vw((
+					height: 18.75
+				));
+
+				position: relative;
+				z-index: 5;
+			}
+
+			&-cover {
+				@include rcm-fill;
+
+				background-color: #FFF;
+				z-index: 6;
+			}
+		}
+
+		&-cover {
+			@include rcm-fill;
+
+			background-color: #FFF;
+			z-index: 6;
+		}
 	}
 
-	&-temp-title {
-		font-family: 'europa', sans-serif;
-		color: #FFF;
-		font-size: 72px;
+	&-message-b {
+		@include cip-vw((
+			margin: 0 1.5
+		));
 	}
 
-	&-temp-subtitle {
+	&-message-d {
+		@include cip-vw((
+			margin-bottom: .75
+		));
+
+		&-text {
+			@include cip-vw((
+				font-size: 2.25,
+				padding: 1.125 2.25
+			));
+
+			background-color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			color: #000;
+			position: relative;
+			display: inline-block;
+			z-index: 5;
+		}
+	}
+}
+
+.cip-producer {
+	$coverColor: #FFE6AE; 
+
+	@include background-image(linear-gradient(200deg, #51556B 0%, #221E33 100%));
+
+	overflow-x: hidden;
+	overflow-y: visible;
+
+	.cip-row-content {
+		@include cip-vw((
+			padding: 4.5 6,
+		));
+		@include align-items(center);
+		@include display-flex;
+		@include flex-direction(column);
+	}
+
+	&-header {
+		@include display-flex;
+		@include flex-direction(column);
+
+		display: inline-block;
+
+		&-text {
+			@include cip-vw((
+				font-size: 2.25,
+				padding: 1.5 3
+			));
+
+			border: 1px solid #FFF;
+			color: #000;
+			color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			position: relative;
+			white-space: nowrap;
+		}
+
+		&-footnote {
+			@include flex(0 0 auto);
+
+			color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			font-size: 14px;
+			margin-top: 6px;
+			position: relative;
+			text-align: right;
+
+			span {
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 12px;
+				top: 2px;
+			}
+		}
+	}
+
+	&-visual-a, &-visual-b {
+		@include flex(0 0 auto);
+
+		overflow: hidden;
+		position: relative;
+
+		&-content {
+			height: 100%;
+			position: relative;
+			width: 100%;
+			z-index: 5;
+		}
+
+		&-cover {
+			@include rcm-fill;
+
+			background-color: $coverColor;
+			z-index: 6;
+		}
+	}
+
+	&-visual-a {
+		$boxSize: 13.5;
+
+		@include cip-vw((
+			height: 18,
+			margin: 1.5 0,
+			width: $boxSize,
+		));
+
+		&-graphic {
+			@include cip-vw((
+				left: 1,
+			));
+
+			height: 100%;	
+			margin: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 5;	
+		}
+
+		&-bg-box {
+			@include cip-vw((
+				height: $boxSize,
+			));
+
+			background-color: $coverColor;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 4;
+		}
+	}
+
+	&-visual-b {
+		@include cip-vw((
+			height: 24,
+			margin: 1.5 0,
+		));
+
+		&-graphic {
+			height: 100%;
+			position: relative;
+		}
+	}
+
+	&-message-a, &-message-b {
+		@include cip-vw((
+			margin: .75 0,
+		));
+
+		@include flex(0 0 auto);
+
+		display: inline-block;
+		position: relative;
+
+		&-text {
+			@include cip-vw((
+				font-size: 1.5,
+			));
+
+			color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			text-align: center;
+		}
+	}
+}
+
+.cip-quote {
+	background-color: #FFF;
+
+	.cip-row-content {
+		@include align-items(center);
+		@include cip-vw((
+			padding: 3 4.5,
+		));
+		@include display-flex;
+		@include flex-direction(column);
+	}
+
+	&-header {
+		@include cip-vw((
+			font-size: 2.25
+		));
+
 		font-family: 'proxima-nova', sans-serif;
-		color: #FFF;
-		font-size: 24px;
+		color: #000;
+	}
+
+	&-message-a, &-message-b, &-message-c {
+		@include cip-vw((
+			font-size: 1.5
+		));
+
+		color: #000;
+		font-family: 'proxima-nova', sans-serif;
 		text-align: center;
-		max-width: 50%;
+	}
+
+
+	&-message-a {
+		@include cip-vw((
+			margin: 1.5 0
+		));
+	}
+
+	&-box {
+		@include cip-vw((
+			margin: 1.5 0,
+			padding: 2.25 3.75,
+			width: 50
+		));
+		@include flex(0 0 auto);
+
+		position: relative;
+
+		&-border {
+			@include box-shadow(inset 0 0 0 8px rgba(#000, .1));
+			@include rcm-fill;
+
+			z-index: 4;
+		}
+
+		&-text {
+			@include cip-vw((
+				font-size: 3
+			));
+
+			color: #000;
+			font-family: 'proxima-nova', sans-serif;
+			text-align: center;
+			z-index: 5;
+		}
+
+		&-quote-left, &-quote-right {
+			@include cip-vw((
+				height: 3
+			));
+
+			position: absolute;
+		}
+
+		&-quote-left {
+			@include cip-vw((
+				top: 1.5,
+				left: -1.5
+			));
+		}
+
+		&-quote-right {
+			@include cip-vw((
+				bottom: 1.5,
+				right: -1.5
+			));
+			@include transform(scale(-1));
+		}
+	}
+}
+
+.cip-features {
+	background-color: #F2F2F2;
+
+	.cip-row-content {
+		@include align-items(flex-start);
+		@include cip-vw((
+			padding: 5.25 4.5,
+			margin-bottom: .75
+		));
+		@include display-flex;
+		@include justify-content(center);
+
+	}
+
+	&-item {
+		@include align-items(center);
+		@include cip-vw((
+			margin: 0 4.5,
+			width: 21.25
+		));
+		@include display-flex;
+		@include flex(0 0 auto);
+		@include flex-direction(column);
+
+		&-graphic {
+			@include cip-vw((
+				height: 13.5,
+				margin-bottom: .75
+			));
+			@include flex(0 0 auto);
+
+			position: relative;
+		}
+
+		&-title {
+			@include cip-vw((
+				font-size: 1.5,
+				letter-spacing: .125,
+				margin-bottom: .625
+			));
+			@include flex(0 0 auto);
+
+			font-family: 'europa', sans-serif;
+			font-weight: 700;
+			position: relative;
+		}
+
+		&-underline {
+			@include cip-vw((
+				margin-bottom: .75
+			));
+			@include flex(0 0 auto);
+
+			background-color: $cruxRed;
+			height: 4px;
+			position: relative;
+			width: 100%;
+		}
+
+		&-message {
+			@include cip-vw((
+				font-size: 1.125
+			));
+			@include flex(0 0 auto);
+
+			font-family: 'proxima-nova', sans-serif;
+			width: 100%;
+			position: relative;
+		}
+	}
+}
+
+.cip-cta {
+	background-color: #FFF;
+
+	.cip-row-content {
+		@include align-items(center);
+		@include cip-vw((
+			padding: 6 3
+		));
+		@include display-flex;
+		@include flex-direction(column);
+	}
+
+	&-bg {
+		@include rcm-fill;
+
+		overflow: hidden;
+		z-index: 0;
+
+		&-graphic {
+			@include cip-vw((
+				left: -55.5,
+				right: -60,
+				top: -12,
+				width: 103.5
+			));
+
+			margin: auto;
+			position: absolute;
+		}
+	}
+
+	&-message {
+		@include cip-vw((
+			font-size: 1.5,
+		));
+		@include flex(0 0 auto);
+
+		color: #000;
+		font-family: 'proxima-nova', sans-serif;
+		position: relative;
+		z-index: 5;
+	}
+
+	&-logo {
+		@include align-items(center);
+		@include cip-vw((
+			height: 9,
+			margin: 3 0,
+		));
+		@include display-flex;
+		@include flex(0 0 auto);
+		
+		position: relative;
+		z-index: 5;
+
+		svg {
+			height: 100%;
+		}
+
+		&-cru {
+			@include flex(0 0 auto);
+
+			position: relative;
+			height: 100%;
+		}
+
+		&-x {
+			@include cip-vw((
+				height: 9,
+				margin-left: 2,
+				width: 9,
+			));
+			@include flex(0 0 auto);
+
+			position: relative;
+
+			&-1, &-2 {
+				@include cip-vw((
+					height: 10.556875,
+					width: 2.159375
+				));
+
+				bottom: -20px;
+				left: -20px;
+				margin: auto;
+				overflow: hidden;
+				position: absolute;
+				right: -20px;
+				top: -20px;
+
+				&-fill, &-cover {
+					@include rcm-fill;
+				}
+
+				&-fill {
+					background-color: $cruxRed;
+					z-index: 5;
+				}
+
+				&-cover {
+					background-color: #000;
+					z-index: 6;
+				}
+			}
+
+			&-1 {
+				@include transform(rotate(-45deg));
+			}
+
+			&-2 {
+				@include transform(rotate(45deg));
+			}
+		}
+	}
+
+	&-try-button, &-talk-button {
+		@include cip-vw((
+			width: 20.25
+		));
+		@include flex(0 0 auto);
+
+		overflow: hidden;
+		position: relative;
+		z-index: 5;
+
+		&-text {
+			@include cip-vw((
+				font-size: 2.25,
+				padding: 1 1.5,
+				letter-spacing: .1875
+			));
+			@include rcm-flex-center;
+
+			background-color: #000;
+			color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			font-weight: 600;
+			width: 100%;
+			z-index: 5;
+		}
+
+		&-cover {
+			@include rcm-fill;
+
+			background-color: $cruxRed;
+			z-index: 6;
+		}
+	}
+
+	&-try-button {
+		@include cip-vw((
+			margin-top: .75,
+			margin-bottom: 2.25
+		));
+	}
+}
+
+.cip-footer {
+	background-color: #000;
+
+	.cip-row-content {
+		@include align-items(center);
+		@include cip-vw((
+			padding: 3.75 6,
+		));
+		@include display-flex;
+		@include flex-direction(column);
+
+	}
+
+	&-whitepaper {
+		@include cip-vw((
+			height: 14.25,
+			margin-bottom: 6.75,
+			width: 36
+		));
+		@include flex(0 0 auto);
+		@include rcm-flex-center;
+
+		position: relative;
+
+		&-box {
+			@include box-shadow(inset 0 0 0 8px #FFF);
+			@include rcm-fill;
+
+			z-index: 4;
+		}
+
+		&-icon {
+			@include cip-vw((
+				height: 7.5
+			));
+			@include flex(0 0 auto);
+
+			position: relative;
+			z-index: 5;
+		}
+
+		&-text {
+			@include cip-vw((
+				font-size: 3,
+				margin-left: 2.25
+			));
+			@include flex(0 0 auto);
+
+			color: #FFF;
+			font-family: 'proxima-nova', sans-serif;
+			font-weight: 600;
+			position: relative;
+			z-index: 6;
+		}
+	}
+
+	&-social {
+		@include cip-vw((
+			height: 2.625,
+		));
+		@include display-flex;
+		@include flex(0 0 auto);
+
+		position: relative;
+		width: 100%;
+
+		&-button {
+			@include cip-vw((
+				width: 2.625,
+				margin-right: 1.5,
+			));
+			@include flex(0 0 auto);
+
+
+			height: 100%;
+			position: relative;
+		}
+	}
+
+	&-bottom {
+		@include align-items(flex-end);
+		@include cip-vw((
+			margin-bottom: 2.25,
+			margin-top: 1.5
+		));
+		@include display-flex;
+		@include flex(0 0 auto);
+
+		height: 24px;
+		position: relative;
+		width: 100%;
+	}
+
+	&-copyright {
+		@include flex(0 0 auto);
+
+		color: #FFF;
+		font-family: 'proxima-nova';
+		font-size: 14px;
+		margin-right: auto;
+		position: relative;
+	}
+
+	&-logo {
+		@include flex(0 0 auto);
+
+		height: 100%;
+		position: relative;
 	}
 }

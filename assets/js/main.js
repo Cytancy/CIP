@@ -12,8 +12,8 @@ $(document).ready(function() {
 				offset: -20,
 				delay: 0,
 			},
-			sectionList: ["prefold", "about", "team"]
-		},
+			sectionList: ["prefold", "about", "team", "consumer", "producer", "quote", "features", "cta", "footer"]
+		}, 
 		observers = {
 			resize: [],
 			mousemove: [],
@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 			screen.height = components.main.element.height();
 
-			screen.vw = screen.width / 100;
+			screen.vw = Math.min(screen.width,  1920) / 100;
 
 			screen.vh = screen.height / 100;
 
@@ -431,23 +431,407 @@ $(document).ready(function() {
 
 		components.sections.team = {
 			initialize: function(component, element) {
-				var entryTimeline = new TimelineMax({paused: true});
+				var headerTimeline = new TimelineMax({paused: true}),
+					galleryTimeline = new TimelineMax({paused: true});
 
 				_.assign(component, {
-					
+					header: {
+						leftLine: {element: element.find(".cip-team-header-line-left")},
+						rightLine: {element: element.find(".cip-team-header-line-right")},
+					},
+					portraitItems: {
+						element: element.find(".cip-team-portrait-item")
+					}
+				});
+
+				headerTimeline.from(component.header.leftLine.element, 2.2, {
+					drawSVG: 0,
+					ease: Power3.easeOut
+				}, 0);
+
+				headerTimeline.from(component.header.rightLine.element, 2.2, {
+					drawSVG: 0,
+					ease: Power3.easeOut
+				}, 0);
+
+				component.portraitItems.element.each(function(index) {
+					var element = $(this),
+						coverElement = element.find(".cip-team-portrait-item-visual-cover"),
+						imageElement = element.find(".cip-team-portrait-item-visual-image");
+
+					cipAndSlide(galleryTimeline, {
+						contentElement: imageElement,
+						coverElement: coverElement,
+						duration: .8,
+						// direction: "y",
+						// offset: (index % 2 == 1) ? 20 : -20,
+						// reverse: (index % 2 == 1),
+						delay: .1 + .12 * index
+					});
+
 				});
 
 				// component.logo.element.removeClass("cip-hidden");
 
 				component.timelines.push({
-					timeline: entryTimeline,
+					timeline: headerTimeline,
 					trigger: {
-						start: 0,
-						end: function() {
-							return 48 + 11.5 * screen.vw;
-						},
+						start: function() {return 10.75 * screen.vw;},
+						end: function() {return 14 * screen.vw;},
 					}
 				});
+
+				component.timelines.push({
+					timeline: galleryTimeline,
+					trigger: {
+						start: function() {return 15 * screen.vw;},
+						end: function() {return 4.5 * screen.vw;},
+					}
+				});
+			},
+		};
+
+		components.sections.consumer = {
+			initialize: function(component, element) {
+				var entryTimeline = new TimelineMax({paused: true});
+
+				_.assign(component, {
+					messageB: {
+						visual: {element: element.find(".cip-consumer-message-b-visual")},
+						cover: {element: element.find(".cip-consumer-message-b-cover")}
+					},
+					messageC: {
+						visual: {element: element.find(".cip-consumer-message-c-visual")},
+						cover: {element: element.find(".cip-consumer-message-c-cover")}
+					}
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.messageB.visual.element,
+					coverElement: component.messageB.cover.element,
+					direction: "y",
+					duration: 1,
+					offset: 20,
+					delay: 0,
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.messageC.visual.element,
+					coverElement: component.messageC.cover.element,
+					direction: "y",
+					duration: 1,
+					offset: 20,
+					delay: .32,
+				});
+
+				component.timelines.push({
+					timeline: entryTimeline,
+					trigger: {
+						start: function() {return 10 * screen.vw;},
+						end: function() {return 10 * screen.vw;},
+					}
+				});
+			},
+		};
+
+		components.sections.producer = {
+			initialize: function(component, element) {
+				var timelineA = new TimelineMax({paused: true}),
+					timelineB = new TimelineMax({paused: true});
+
+				_.assign(component, {
+					visualA: {
+						content: {element: element.find(".cip-producer-visual-a-content")},
+						cover: {element: element.find(".cip-producer-visual-a-cover")},
+						bgBox: {element: element.find(".cip-producer-visual-a-bg-box")},
+					},
+					visualB: {
+						content: {element: element.find(".cip-producer-visual-b-content")},
+						cover: {element: element.find(".cip-producer-visual-b-cover")},
+					},
+				});
+
+				cipAndSlide(timelineA, {
+					contentElement: component.visualA.content.element,
+					coverElement: component.visualA.cover.element,
+					direction: "x",
+					duration: 1,
+					offset: 20,
+					delay: 0,
+				});
+
+				timelineA.fromTo(component.visualA.bgBox.element, .8, {
+					xPercent: 100,
+				}, {
+					xPercent: 0,
+					ease: CustomEase.get("cipInOut")
+				}, .2);
+
+				cipAndSlide(timelineB, {
+					contentElement: component.visualB.content.element,
+					coverElement: component.visualB.cover.element,
+					direction: "x",
+					duration: 1,
+					reverse: true,
+					offset: -20,
+					hideCover: true,
+				});
+
+				component.timelines.push({
+					timeline: timelineA,
+					trigger: {
+						start: function() {return 8.5 * screen.vw;},
+						end: function() {return 40.5 * screen.vw;},
+					}
+				});
+
+				component.timelines.push({
+					timeline: timelineB,
+					trigger: {
+						start: function() {return 36.5 * screen.vw;},
+						end: function() {return 8.5 * screen.vw;},
+					}
+				});
+
+				// component.timelines.push({
+				// 	timeline: headerTimeline,
+				// 	trigger: {
+				// 		start: function() {return 10.75 * screen.vw;},
+				// 		end: function() {return 14 * screen.vw;},
+				// 	}
+				// });
+
+				// component.timelines.push({
+				// 	timeline: galleryTimeline,
+				// 	trigger: {
+				// 		start: function() {return 15 * screen.vw;},
+				// 		end: function() {return 4.5 * screen.vw;},
+				// 	}
+				// });
+			},
+		};
+
+		components.sections.quote = {
+			initialize: function(component, element) {
+				var headerTimeline = new TimelineMax({paused: true}),
+					galleryTimeline = new TimelineMax({paused: true});
+
+				_.assign(component, {
+				});
+
+				// component.timelines.push({
+				// 	timeline: headerTimeline,
+				// 	trigger: {
+				// 		start: function() {return 10.75 * screen.vw;},
+				// 		end: function() {return 14 * screen.vw;},
+				// 	}
+				// });
+
+				// component.timelines.push({
+				// 	timeline: galleryTimeline,
+				// 	trigger: {
+				// 		start: function() {return 15 * screen.vw;},
+				// 		end: function() {return 4.5 * screen.vw;},
+				// 	}
+				// });
+			},
+		};
+
+		components.sections.features = {
+			initialize: function(component, element) {
+				var headerTimeline = new TimelineMax({paused: true}),
+					galleryTimeline = new TimelineMax({paused: true});
+
+				_.assign(component, {
+				});
+
+				// component.timelines.push({
+				// 	timeline: headerTimeline,
+				// 	trigger: {
+				// 		start: function() {return 10.75 * screen.vw;},
+				// 		end: function() {return 14 * screen.vw;},
+				// 	}
+				// });
+
+				// component.timelines.push({
+				// 	timeline: galleryTimeline,
+				// 	trigger: {
+				// 		start: function() {return 15 * screen.vw;},
+				// 		end: function() {return 4.5 * screen.vw;},
+				// 	}
+				// });
+			},
+		};
+
+		components.sections.cta = {
+			initialize: function(component, element) {
+				var entryTimeline = new TimelineMax({paused: true}),
+					logoStart = 0;
+
+				_.assign(component, {
+					logo: {
+						element: element.find(".cip-cta-logo"),
+						c: {element: element.find(".cip-cta-logo-c")},
+						r: {
+							1: {element: element.find(".cip-cta-logo-r-1")},
+							2: {element: element.find(".cip-cta-logo-r-2")},
+						},
+						u: {element: element.find(".cip-cta-logo-u")},
+						x: {
+							1: {
+								fill: {element: element.find(".cip-cta-logo-x-1-fill")},
+								cover: {element: element.find(".cip-cta-logo-x-1-cover")},
+							},
+							2: {
+								fill: {element: element.find(".cip-cta-logo-x-2-fill")},
+								cover: {element: element.find(".cip-cta-logo-x-2-cover")},
+							},
+						},
+					},
+					tryButton: {
+						text: {element: element.find(".cip-cta-try-button-text")},
+						cover: {element: element.find(".cip-cta-try-button-cover")},
+					},
+					talkButton: {
+						text: {element: element.find(".cip-cta-talk-button-text")},
+						cover: {element: element.find(".cip-cta-talk-button-cover")},
+					}
+				});
+
+				entryTimeline.from(component.logo.c.element, .62, {
+					drawSVG: 0,
+					ease: CustomEase.get("cipInOut")
+				}, logoStart);
+
+				entryTimeline.from(component.logo.r[1].element, .62, {
+					drawSVG: 0,
+					ease: Power2.easeIn
+				}, logoStart + .14);
+
+				entryTimeline.from(component.logo.r[2].element, .5, {
+					drawSVG: 0,
+					ease: Power2.easeOut
+				}, logoStart + .66);
+
+				entryTimeline.from(component.logo.u.element, .74, {
+					drawSVG: 0,
+					ease: CustomEase.get("cipInOut")
+				}, logoStart + .28);
+
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.logo.x[1].fill.element,
+					coverElement: component.logo.x[1].cover.element,
+					direction: "y",
+					duration: .8,
+					offset: 0,
+					delay: logoStart + .42,
+					hideCover: true,
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.logo.x[2].fill.element,
+					coverElement: component.logo.x[2].cover.element,
+					direction: "y",
+					duration: .8,
+					offset: 0,
+					delay: logoStart + .82,
+					hideCover: true,
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.tryButton.text.element,
+					coverElement: component.tryButton.cover.element,
+					direction: "x",
+					duration: 1,
+					reverse: true,
+					offset: -20,
+					delay: logoStart + .62,
+					hideCover: true,
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.talkButton.text.element,
+					coverElement: component.talkButton.cover.element,
+					direction: "x",
+					duration: 1,
+					offset: 20,
+					delay: logoStart + .62,
+					hideCover: true,
+				});
+
+				component.timelines.push({
+					timeline: entryTimeline,
+					trigger: {
+						start: function() {return 6 * screen.vw;},
+						end: function() {return 6 * screen.vw;},
+					}
+				});
+
+				// component.timelines.push({
+				// 	timeline: galleryTimeline,
+				// 	trigger: {
+				// 		start: function() {return 15 * screen.vw;},
+				// 		end: function() {return 4.5 * screen.vw;},
+				// 	}
+				// });
+			},
+		};
+
+		components.sections.footer = {
+			initialize: function(component, element) {
+				var entryTimeline = new TimelineMax({paused: true});
+
+				_.assign(component, {
+					messageB: {
+						content: {element: element.find(".cip-consumer-message-b-content")},
+						cover: {element: element.find(".cip-consumer-message-b-cover")}
+					},
+					messageC: {
+						content: {element: element.find(".cip-consumer-message-c-content")},
+						cover: {element: element.find(".cip-consumer-message-c-cover")}
+					}
+				});
+
+				cipAndSlide(entryTimeline, {
+					contentElement: component.messageB.content.element,
+					coverElement: component.messageB.cover.element,
+					direction: "y",
+					duration: 1.2,
+					offset: -20,
+					delay: 0,
+					hideCover: true,
+				});
+
+				component.timelines.push({
+					timeline: entryTimeline,
+					trigger: {
+						start: function() {return 10 * screen.vw;},
+						end: function() {return 10 * screen.vw;},
+					}
+				});
+
+				var headerTimeline = new TimelineMax({paused: true}),
+					galleryTimeline = new TimelineMax({paused: true});
+
+				_.assign(component, {
+				});
+
+				// component.timelines.push({
+				// 	timeline: headerTimeline,
+				// 	trigger: {
+				// 		start: function() {return 10.75 * screen.vw;},
+				// 		end: function() {return 14 * screen.vw;},
+				// 	}
+				// });
+
+				// component.timelines.push({
+				// 	timeline: galleryTimeline,
+				// 	trigger: {
+				// 		start: function() {return 15 * screen.vw;},
+				// 		end: function() {return 4.5 * screen.vw;},
+				// 	}
+				// });
 			},
 		};
 
@@ -571,7 +955,7 @@ $(document).ready(function() {
 
 					if (section.position.onset >= triggerStart && section.position.endset >= triggerEnd) {
 						timelineConfiguration.played = true;
-
+						console.log(section);
 						timelineConfiguration.timeline.play();
 					}
 				} 
