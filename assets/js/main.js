@@ -87,7 +87,7 @@ $(document).ready(function() {
 	function setupScrolling() {
 		documentElement.on("scroll", _.throttle(function() {
 			window.requestAnimationFrame(checkScroll);
-		}, 50));
+		}, 30));
 
 		checkScroll();
 
@@ -527,7 +527,7 @@ $(document).ready(function() {
 				component.timelines.push({
 					timeline: entryTimeline,
 					trigger: {
-						start: function() {return 10 * screen.vw;},
+						start: function() {return 8 * screen.vw;},
 						end: function() {return 10 * screen.vw;},
 					}
 				});
