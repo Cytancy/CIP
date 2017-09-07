@@ -498,11 +498,11 @@ $(document).ready(function() {
 				_.assign(component, {
 					messageB: {
 						visual: {element: element.find(".cip-consumer-message-b-visual")},
-						cover: {element: element.find(".cip-consumer-message-b-cover")}
+						cover: {element: element.find(".cip-consumer-message-b-content-cover")}
 					},
 					messageC: {
 						visual: {element: element.find(".cip-consumer-message-c-visual")},
-						cover: {element: element.find(".cip-consumer-message-c-cover")}
+						cover: {element: element.find(".cip-consumer-message-c-content-cover")}
 					}
 				});
 
@@ -510,7 +510,7 @@ $(document).ready(function() {
 					contentElement: component.messageB.visual.element,
 					coverElement: component.messageB.cover.element,
 					direction: "y",
-					duration: 1,
+					duration: 1.2,
 					offset: 20,
 					delay: 0,
 				});
@@ -519,7 +519,7 @@ $(document).ready(function() {
 					contentElement: component.messageC.visual.element,
 					coverElement: component.messageC.cover.element,
 					direction: "y",
-					duration: 1,
+					duration: 1.2,
 					offset: 20,
 					delay: .32,
 				});
@@ -955,7 +955,7 @@ $(document).ready(function() {
 
 					if (section.position.onset >= triggerStart && section.position.endset >= triggerEnd) {
 						timelineConfiguration.played = true;
-						console.log(section);
+
 						timelineConfiguration.timeline.play();
 					}
 				} 

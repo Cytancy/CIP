@@ -989,12 +989,26 @@ body {
 		position: relative;
 		z-index: 5;
 
+		&-content {
+			@include align-items(center);
+			@include display-flex;
+			@include flex(0 0 auto);
+			@include flex-direction(column);
+			
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+
+			&-cover {
+				@include rcm-fill;
+
+				background-color: #FFF;
+				z-index: 6;
+			}
+		}
 
 		&-bubble {
 			@include align-items(center);
-			@include cip-vw((
-				margin-bottom: 1.5
-			));
 			@include display-flex;
 			@include flex(0 0 auto);
 			@include flex-direction(column);
@@ -1017,6 +1031,7 @@ body {
 
 			&-triangle {
 				@include cip-vw((
+					margin-bottom: 1.5,
 					width: 1.75,
 				));
 
